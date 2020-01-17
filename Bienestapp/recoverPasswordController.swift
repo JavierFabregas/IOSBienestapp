@@ -20,7 +20,7 @@ class recoverPasswordController: UIViewController {
         
     }
     func postUser(user: User) {
-        let url = URL(string:"http://localhost:8888/APIBienestapp/public/index.php/api/recuperarContraseña")
+        let url = URL(string:"http://localhost:8888/APIBienestapp/public/index.php/api/recuperarContrasena")
         let json = ["email": user.email]
         
         Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in

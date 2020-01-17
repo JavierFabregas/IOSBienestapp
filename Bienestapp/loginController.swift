@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+var user = User()
 class loginController: UIViewController {
 
     @IBOutlet weak var prueba: UITextField!
@@ -21,7 +23,7 @@ class loginController: UIViewController {
     
 
     @IBAction func login(_ sender: Any) {
-        var errores = true
+        var errores = false
         if(emailInput.text!.isEmpty){
             errores = true
             errorEmail.isHidden = false
@@ -39,11 +41,23 @@ class loginController: UIViewController {
         }
         
         if(!errores){
-            // crear usuario en la api
+            
             print("nombre: ", user.name
                 + " Email: ", user.email + " Password: ", user.password)
+            postUser(user: user)
         }else{
             print("Con errores no llegamos a ningun lado")
+        }
+    }
+    
+    func postUser(user: User) {
+        let url = URL(string: "http://localhost:8888/APIBienestapp/public/index.php/api/login")
+        let json = ["email": user.email,
+                    "password": user.password]
+        
+        Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
+            print(response)
+            // mostrar error si el correo no exsiste, si existe mandar a la pantalla de inicio
         }
     }
 }

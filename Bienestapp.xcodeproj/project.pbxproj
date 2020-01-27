@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1DC0E223DEFE2F000D4D80 /* appList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DC0E123DEFE2F000D4D80 /* appList.swift */; };
+		7F1DC0E423DF0362000D4D80 /* Usages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DC0E323DF0362000D4D80 /* Usages.swift */; };
 		7FEBEB7623D0550800D04D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBEB7523D0550800D04D83 /* AppDelegate.swift */; };
 		7FEBEB7823D0550800D04D83 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBEB7723D0550800D04D83 /* loginController.swift */; };
 		7FEBEB7B23D0550800D04D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEBEB7923D0550800D04D83 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		14E8622CE5A1121CE726E67A /* Pods-Bienestapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestapp.release.xcconfig"; path = "Target Support Files/Pods-Bienestapp/Pods-Bienestapp.release.xcconfig"; sourceTree = "<group>"; };
 		621FE4DD4F7EC455E5C886A5 /* Pods-Bienestapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestapp.debug.xcconfig"; path = "Target Support Files/Pods-Bienestapp/Pods-Bienestapp.debug.xcconfig"; sourceTree = "<group>"; };
+		7F1DC0E123DEFE2F000D4D80 /* appList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appList.swift; sourceTree = "<group>"; };
+		7F1DC0E323DF0362000D4D80 /* Usages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usages.swift; sourceTree = "<group>"; };
 		7FEBEB7223D0550800D04D83 /* Bienestapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bienestapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEBEB7523D0550800D04D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FEBEB7723D0550800D04D83 /* loginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				7FEBEB7523D0550800D04D83 /* AppDelegate.swift */,
 				7FEBEB7723D0550800D04D83 /* loginController.swift */,
 				7FEBEB7923D0550800D04D83 /* Main.storyboard */,
+				7F1DC0E323DF0362000D4D80 /* Usages.swift */,
+				7F1DC0E123DEFE2F000D4D80 /* appList.swift */,
 				7FEC8C7D23D1BB4200B15125 /* recoverPasswordController.swift */,
 				7FEBEB8923D0667800D04D83 /* User.swift */,
 				7FEBEB8723D0573F00D04D83 /* registerController.swift */,
@@ -217,6 +223,8 @@
 				7FEC8C7E23D1BB4200B15125 /* recoverPasswordController.swift in Sources */,
 				7FEBEB8823D0573F00D04D83 /* registerController.swift in Sources */,
 				7FEBEB7623D0550800D04D83 /* AppDelegate.swift in Sources */,
+				7F1DC0E223DEFE2F000D4D80 /* appList.swift in Sources */,
+				7F1DC0E423DF0362000D4D80 /* Usages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

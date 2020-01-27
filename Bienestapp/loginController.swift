@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 var user = User()
+var token:String = ""
 class loginController: UIViewController {
 
     @IBOutlet weak var prueba: UITextField!
@@ -56,8 +57,23 @@ class loginController: UIViewController {
                     "password": user.password]
         
         Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
-            print(response)
-            // mostrar error si el correo no exsiste, si existe mandar a la pantalla de inicio
+            
+            var json = response.result.value as! [String: AnyObject]
+            token = json["token"] as! String
+            
+            
+            if(response.response!.statusCode == 201){
+                self.performSegue(withIdentifier: "SuccessLogin", sender: nil)
+                
+            }else{
+                let alerta1 = UIAlertAction(title: "Aceptar", style:
+                UIAlertAction.Style.default){(error) in
+                    
+                }
+                let alerta = UIAlertController (title: "Error", message: "Login incorrecto", preferredStyle: UIAlertController.Style.alert)
+                alerta.addAction(alerta1)
+                self.present(alerta, animated: true,completion: nil)
+            }
         }
     }
 }

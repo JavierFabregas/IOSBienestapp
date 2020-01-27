@@ -62,8 +62,39 @@ class registerController: UIViewController {
                     "password": user.password]
         
         Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
-            print(response)
+            
+            /*
+             if(response.response!.statusCode == 201){
+                self.loginUser(user: user)
+            }else{
+                print(response)
+            }
+            */
+            
             // mostrar error si el correo ya exsiste y si se crea mandar a la pantalla de inicio.
+        }
+    }
+    
+    func loginUser(user: User){
+        let url = URL(string: "http://localhost:8888/APIBienestapp/public/index.php/api/login")
+        let json = ["email": user.email,
+                    "password": user.password]
+        
+        Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
+            print(response)
+            
+            if(response.response!.statusCode == 201){
+                self.performSegue(withIdentifier: "SuccessLogin", sender: nil)
+                
+            }else{
+                let alerta1 = UIAlertAction(title: "Aceptar", style:
+                UIAlertAction.Style.default){(error) in
+                    
+                }
+                let alerta = UIAlertController (title: "Error", message: "Login incorrecto", preferredStyle: UIAlertController.Style.alert)
+                alerta.addAction(alerta1)
+                self.present(alerta, animated: true,completion: nil)
+            }
         }
     }
 }

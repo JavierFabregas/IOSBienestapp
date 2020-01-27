@@ -110,11 +110,62 @@
                         <outlet property="errorEmail" destination="Mun-se-vxR" id="V6W-pF-Kvr"/>
                         <outlet property="errorPassword" destination="Fpi-my-ZNl" id="fAT-11-VbX"/>
                         <outlet property="passwordInput" destination="wLm-Wf-6hm" id="GEF-s8-Oj5"/>
+                        <segue destination="sTO-qY-GZa" kind="show" identifier="SuccessLogin" id="gAg-rv-gRj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87" y="-214"/>
+            <point key="canvasLocation" x="-190" y="-214"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="rVw-pJ-BaR">
+            <objects>
+                <viewController id="kVV-A0-tgd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fmF-y6-HCS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="J6Q-PU-4AL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="qTQ-jb-BK4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhR-FJ-mAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159" y="110"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="1kc-qf-qnI">
+            <objects>
+                <viewController id="mtv-FF-RWH" customClass="appList" customModule="Bienestapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Bq-p4-Sgz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mfl-Dd-X1b"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="yDr-tX-LSz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPU-MX-PRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159" y="-538"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yov-FC-DSc">
+            <objects>
+                <tabBarController id="sTO-qY-GZa" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fGw-Mq-VvL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mtv-FF-RWH" kind="relationship" relationship="viewControllers" id="8M9-lE-nja"/>
+                        <segue destination="kVV-A0-tgd" kind="relationship" relationship="viewControllers" id="Y5N-OR-ZCo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDP-Jp-zX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="-214"/>
         </scene>
         <!--Recover Password Controller-->
         <scene sceneID="4aT-ps-g6k">

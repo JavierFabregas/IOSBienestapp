@@ -12,7 +12,7 @@ class recoverPasswordController: UIViewController {
     @IBAction func recoverPassword(_ sender: Any) {
         
         if(emailInput.text!.isEmpty){
-            user.email = ""
+            user.email = ""                                       
         }else{
             user.email = emailInput.text!
             postUser(user: user)

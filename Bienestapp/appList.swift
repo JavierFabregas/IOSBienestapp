@@ -68,4 +68,13 @@ class appList: UITableViewController {
             
         }
     }
+    /*func orderUsages(){
+        
+        for i in 0...applications!.count{
+            if (applications![i]["id"] as! String) == (usages![i]["application_id"] as! String) {
+                
+            }
+        }
+ 
+    }*/
 }

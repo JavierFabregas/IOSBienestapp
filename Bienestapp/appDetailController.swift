@@ -26,12 +26,12 @@ class appDetailController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //let nextScreen = segue.destination as! restrictionController
+        let nextScreen = segue.destination as! restrictController
         //let celda = sender as! Cell
-        //let app = Application()
-        //app.name = application?.name
-        //app.icon = application?.name
+        let app = Application()
+        app.name = nameApp.text!
+        app.icon = imageApp.image
         //app.usetime = application?.name
-        //nextScreen.application = app
+        nextScreen.application = app
     }
 }

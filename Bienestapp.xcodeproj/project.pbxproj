@@ -22,7 +22,7 @@
 		7FEBEB8823D0573F00D04D83 /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBEB8723D0573F00D04D83 /* registerController.swift */; };
 		7FEBEB8A23D0667800D04D83 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBEB8923D0667800D04D83 /* User.swift */; };
 		7FEC8C7E23D1BB4200B15125 /* recoverPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC8C7D23D1BB4200B15125 /* recoverPasswordController.swift */; };
-		7FFA6C7923EAC47D00187B5D /* restrictionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA6C7823EAC47D00187B5D /* restrictionController.swift */; };
+		7FFA6C7D23EAD97400187B5D /* restrictController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA6C7C23EAD97400187B5D /* restrictController.swift */; };
 		B115C8E0A9B0521F58B32FD2 /* Pods_Bienestapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B40140EC0FAE606A12A955 /* Pods_Bienestapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,7 @@
 		7FEBEB8723D0573F00D04D83 /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
 		7FEBEB8923D0667800D04D83 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7FEC8C7D23D1BB4200B15125 /* recoverPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recoverPasswordController.swift; sourceTree = "<group>"; };
-		7FFA6C7823EAC47D00187B5D /* restrictionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restrictionController.swift; sourceTree = "<group>"; };
+		7FFA6C7C23EAD97400187B5D /* restrictController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restrictController.swift; sourceTree = "<group>"; };
 		F1B40140EC0FAE606A12A955 /* Pods_Bienestapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,7 +96,6 @@
 				7FEBEB7923D0550800D04D83 /* Main.storyboard */,
 				7FDFEE3723E9618C00E595B4 /* Application.swift */,
 				7FA0717623E436F000C771EC /* Restriction.swift */,
-				7FFA6C7823EAC47D00187B5D /* restrictionController.swift */,
 				7FA0717823E4370100C771EC /* appDetailController.swift */,
 				7FC9C24E23E30EF100E13FC5 /* profileController.swift */,
 				7FEAED8D23E1936200050034 /* Cell.swift */,
@@ -108,6 +107,7 @@
 				7FEBEB7C23D0550E00D04D83 /* Assets.xcassets */,
 				7FEBEB7E23D0550E00D04D83 /* LaunchScreen.storyboard */,
 				7FEBEB8123D0550E00D04D83 /* Info.plist */,
+				7FFA6C7C23EAD97400187B5D /* restrictController.swift */,
 			);
 			path = Bienestapp;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 				7FEBEB8A23D0667800D04D83 /* User.swift in Sources */,
 				7FEBEB7823D0550800D04D83 /* loginController.swift in Sources */,
 				7FEC8C7E23D1BB4200B15125 /* recoverPasswordController.swift in Sources */,
-				7FFA6C7923EAC47D00187B5D /* restrictionController.swift in Sources */,
+				7FFA6C7D23EAD97400187B5D /* restrictController.swift in Sources */,
 				7FA0717723E436F000C771EC /* Restriction.swift in Sources */,
 				7FEBEB8823D0573F00D04D83 /* registerController.swift in Sources */,
 				7FEBEB7623D0550800D04D83 /* AppDelegate.swift in Sources */,

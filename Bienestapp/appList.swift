@@ -47,7 +47,7 @@ class appList: UITableViewController {
         if(self.applications == nil && self.usages == nil){
             return
         }
-
+    
         numberOfRows = applications!.count
         self.tableView.reloadData()
     }

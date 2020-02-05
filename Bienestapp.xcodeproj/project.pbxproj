@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		7F1DC0E223DEFE2F000D4D80 /* appList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DC0E123DEFE2F000D4D80 /* appList.swift */; };
 		7F1DC0E423DF0362000D4D80 /* Usages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DC0E323DF0362000D4D80 /* Usages.swift */; };
+		7FA0717723E436F000C771EC /* Restriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0717623E436F000C771EC /* Restriction.swift */; };
+		7FA0717923E4370100C771EC /* appDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0717823E4370100C771EC /* appDetailController.swift */; };
 		7FC9C24F23E30EF100E13FC5 /* profileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC9C24E23E30EF100E13FC5 /* profileController.swift */; };
+		7FDFEE3823E9618C00E595B4 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFEE3723E9618C00E595B4 /* Application.swift */; };
 		7FEAED8E23E1936200050034 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEAED8D23E1936200050034 /* Cell.swift */; };
 		7FEBEB7623D0550800D04D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBEB7523D0550800D04D83 /* AppDelegate.swift */; };
 		7FEBEB7823D0550800D04D83 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBEB7723D0550800D04D83 /* loginController.swift */; };
@@ -19,6 +22,7 @@
 		7FEBEB8823D0573F00D04D83 /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBEB8723D0573F00D04D83 /* registerController.swift */; };
 		7FEBEB8A23D0667800D04D83 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBEB8923D0667800D04D83 /* User.swift */; };
 		7FEC8C7E23D1BB4200B15125 /* recoverPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC8C7D23D1BB4200B15125 /* recoverPasswordController.swift */; };
+		7FFA6C7923EAC47D00187B5D /* restrictionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA6C7823EAC47D00187B5D /* restrictionController.swift */; };
 		B115C8E0A9B0521F58B32FD2 /* Pods_Bienestapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B40140EC0FAE606A12A955 /* Pods_Bienestapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +31,10 @@
 		621FE4DD4F7EC455E5C886A5 /* Pods-Bienestapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestapp.debug.xcconfig"; path = "Target Support Files/Pods-Bienestapp/Pods-Bienestapp.debug.xcconfig"; sourceTree = "<group>"; };
 		7F1DC0E123DEFE2F000D4D80 /* appList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appList.swift; sourceTree = "<group>"; };
 		7F1DC0E323DF0362000D4D80 /* Usages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usages.swift; sourceTree = "<group>"; };
+		7FA0717623E436F000C771EC /* Restriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restriction.swift; sourceTree = "<group>"; };
+		7FA0717823E4370100C771EC /* appDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appDetailController.swift; sourceTree = "<group>"; };
 		7FC9C24E23E30EF100E13FC5 /* profileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileController.swift; sourceTree = "<group>"; };
+		7FDFEE3723E9618C00E595B4 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		7FEAED8D23E1936200050034 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		7FEBEB7223D0550800D04D83 /* Bienestapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bienestapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEBEB7523D0550800D04D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +46,7 @@
 		7FEBEB8723D0573F00D04D83 /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
 		7FEBEB8923D0667800D04D83 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7FEC8C7D23D1BB4200B15125 /* recoverPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recoverPasswordController.swift; sourceTree = "<group>"; };
+		7FFA6C7823EAC47D00187B5D /* restrictionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restrictionController.swift; sourceTree = "<group>"; };
 		F1B40140EC0FAE606A12A955 /* Pods_Bienestapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +94,10 @@
 				7FEBEB7523D0550800D04D83 /* AppDelegate.swift */,
 				7FEBEB7723D0550800D04D83 /* loginController.swift */,
 				7FEBEB7923D0550800D04D83 /* Main.storyboard */,
+				7FDFEE3723E9618C00E595B4 /* Application.swift */,
+				7FA0717623E436F000C771EC /* Restriction.swift */,
+				7FFA6C7823EAC47D00187B5D /* restrictionController.swift */,
+				7FA0717823E4370100C771EC /* appDetailController.swift */,
 				7FC9C24E23E30EF100E13FC5 /* profileController.swift */,
 				7FEAED8D23E1936200050034 /* Cell.swift */,
 				7F1DC0E323DF0362000D4D80 /* Usages.swift */,
@@ -224,15 +236,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDFEE3823E9618C00E595B4 /* Application.swift in Sources */,
 				7FC9C24F23E30EF100E13FC5 /* profileController.swift in Sources */,
 				7FEBEB8A23D0667800D04D83 /* User.swift in Sources */,
 				7FEBEB7823D0550800D04D83 /* loginController.swift in Sources */,
 				7FEC8C7E23D1BB4200B15125 /* recoverPasswordController.swift in Sources */,
+				7FFA6C7923EAC47D00187B5D /* restrictionController.swift in Sources */,
+				7FA0717723E436F000C771EC /* Restriction.swift in Sources */,
 				7FEBEB8823D0573F00D04D83 /* registerController.swift in Sources */,
 				7FEBEB7623D0550800D04D83 /* AppDelegate.swift in Sources */,
 				7FEAED8E23E1936200050034 /* Cell.swift in Sources */,
 				7F1DC0E223DEFE2F000D4D80 /* appList.swift in Sources */,
 				7F1DC0E423DF0362000D4D80 /* Usages.swift in Sources */,
+				7FA0717923E4370100C771EC /* appDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

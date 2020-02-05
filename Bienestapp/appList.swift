@@ -28,18 +28,26 @@ class appList: UITableViewController {
         if(self.applications != nil && self.usages != nil){
             let url = URL(string: self.applications![indexPath.row]["icon"] as! String)
             cell.Imagen.af_setImage(withURL: url!)
-            
             cell.Nombre.text = (self.applications![indexPath.row]["name"] as! String)
             cell.TimeUse.text = (self.usages![indexPath.row]["totalTime"] as! String)
+            cell.day.text = (self.usages![indexPath.row]["day"] as! String)
         }
         return cell
     }
-    func dataRecived(){
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextScreen = segue.destination as! appDetailController
+        let celda = sender as! Cell
+        let app = Application()
+        app.name = celda.Nombre.text!
+        app.icon = celda.Imagen.image!
+        app.usetime = celda.TimeUse.text!
+        nextScreen.application = app
+    }
+   func dataRecived(){
         if(self.applications == nil && self.usages == nil){
             return
         }
-        
-        print(usages)
+
         numberOfRows = applications!.count
         self.tableView.reloadData()
     }
@@ -59,6 +67,7 @@ class appList: UITableViewController {
         
         let url = URL(string: "http://localhost:8888/APIBienestapp/public/index.php/api/application/var")
         print("sesion iniciada")
+        
         let header = ["Authentication": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imphdmllcl9mYWJyZWdhc19hcHBzMW1hMTgxOUBjZXYuY29tIn0.CPmIcFFSltjwwdByDJAIS_EM4iuIeYZjKnkdv7KQM3E"]
         
         Alamofire.request(url!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
@@ -68,13 +77,4 @@ class appList: UITableViewController {
             
         }
     }
-    /*func orderUsages(){
-        
-        for i in 0...applications!.count{
-            if (applications![i]["id"] as! String) == (usages![i]["application_id"] as! String) {
-                
-            }
-        }
- 
-    }*/
 }

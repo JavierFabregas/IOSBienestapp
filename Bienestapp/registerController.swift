@@ -62,16 +62,6 @@ class registerController: UIViewController {
                     "password": user.password]
         
         Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
-            
-            /*
-             if(response.response!.statusCode == 201){
-                self.loginUser(user: user)
-            }else{
-                print(response)
-            }
-            */
-            
-            // mostrar error si el correo ya exsiste y si se crea mandar a la pantalla de inicio.
         }
     }
     

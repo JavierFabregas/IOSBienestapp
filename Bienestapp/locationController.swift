@@ -58,7 +58,7 @@ class locationController: UIViewController, CLLocationManagerDelegate, MKMapView
     func getUsages() {
         let url = URL(string: "http://localhost:8888/APIBienestapp/public/index.php/api/mostrarLocation")
         
-        let header = ["Authentication": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imphdmllcl9mYWJyZWdhc19hcHBzMW1hMTgxOUBjZXYuY29tIn0.CPmIcFFSltjwwdByDJAIS_EM4iuIeYZjKnkdv7KQM3E"]
+        let header = ["Authentication": token]
         
         Alamofire.request(url!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
             print(response.response!.statusCode,"- Mapa")

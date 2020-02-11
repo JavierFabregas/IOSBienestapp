@@ -2,6 +2,7 @@
 import Foundation
 import UIKit
 import Alamofire
+import UserNotifications
 
 class userController: UIViewController{
     
@@ -11,11 +12,24 @@ class userController: UIViewController{
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userEmail: UILabel!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        userName.text = user.name
-        userEmail.text = user.email
         
+    }
+    
+    
+    @IBAction func getPeticiones(_ sender: Any) {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]){(
+            autorizado,error
+            )in
+            if autorizado{
+                print("permiso concedido")
+            }else{
+                print("permiso denegado", error?.localizedDescription)
+            }
+        }
     }
     
     
@@ -42,7 +56,7 @@ class userController: UIViewController{
     func postUpdate(user: User) {
         let url = URL(string: "http://localhost:8888/APIBienestapp/public/index.php/api/updateUser")
         let json = ["password": user.password]
-        let header = ["Authentication": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imphdmllcl9mYWJyZWdhc19hcHBzMW1hMTgxOUBjZXYuY29tIn0.CPmIcFFSltjwwdByDJAIS_EM4iuIeYZjKnkdv7KQM3E"]
+        let header = ["Authentication": token]
         
         Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
             print(response)

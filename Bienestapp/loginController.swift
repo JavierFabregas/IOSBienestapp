@@ -9,7 +9,8 @@
 import UIKit
 import Alamofire
 var user = User()
-var token:String = ""
+var token:String = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imphdmllcl9mYWJyZWdhc19hcHBzMW1hMTgxOUBjZXYuY29tIn0.CPmIcFFSltjwwdByDJAIS_EM4iuIeYZjKnkdv7KQM3E"
+
 class loginController: UIViewController {
 
     @IBOutlet weak var prueba: UITextField!

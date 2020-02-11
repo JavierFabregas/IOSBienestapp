@@ -51,6 +51,7 @@ class registerController: UIViewController {
             print("nombre: ", user.name
                 + " Email: ", user.email + " Password: ", user.password)
             postUser(user: user)
+            uploadCSV()
         }else{
             print("Con errores no llegamos a ningun lado")
         }
@@ -73,6 +74,9 @@ class registerController: UIViewController {
         Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             print(response)
             
+            var json = response.result.value as! [String: AnyObject]
+            token = json["token"] as! String
+            
             if(response.response!.statusCode == 201){
                 self.performSegue(withIdentifier: "SuccessLogin", sender: nil)
                 
@@ -85,6 +89,19 @@ class registerController: UIViewController {
                 alerta.addAction(alerta1)
                 self.present(alerta, animated: true,completion: nil)
             }
+        }
+    }
+    
+    func uploadCSV (){
+        let url = URL(string: "http://localhost:8888/APIBienestapp/public/index.php/api/usage")
+        let json = ["email": user.email]
+        
+        let header = ["Authentication": token]
+        
+        Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            print(response)
+            
+            
         }
     }
 }

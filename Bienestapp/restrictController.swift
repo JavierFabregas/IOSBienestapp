@@ -70,15 +70,19 @@ class restrictController: UIViewController {
         let url = URL(string: "http://localhost:8888/APIBienestapp/public/index.php/api/restriction")
         let json = ["name": restriction.name, "max_time": restriction.max_time, "start_hour_restriction": restriction.start_hour_restriction, "finish_hour_restriction": restriction.finish_hour_restriction] as [String : Any]
         
-        let header = ["Authentication": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imphdmllcl9mYWJyZWdhc19hcHBzMW1hMTgxOUBjZXYuY29tIn0.CPmIcFFSltjwwdByDJAIS_EM4iuIeYZjKnkdv7KQM3E"]
+        let header = ["Authentication": token]
         
         Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers:header).responseJSON { (response) in
             
            print(json)
            print("--------")
            print(response)
+        self.dismiss(animated: true, completion: nil)
         }
     }
     
+    @IBAction func exit(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
 }

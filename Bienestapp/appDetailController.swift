@@ -25,6 +25,9 @@ class appDetailController: UIViewController {
     }
     
     
+    @IBAction func exit(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nextScreen = segue.destination as! restrictController
         //let celda = sender as! Cell
